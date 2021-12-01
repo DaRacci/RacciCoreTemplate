@@ -1,0 +1,8 @@
+name: Example
+version: '${version}' # This will be replaced when building
+main: org.example.plugin.Plugin
+api-version: 1.18
+prefix: Example
+load: POSTWORLD
+depend: [ RacciCore ]
+authors: [ Racci ]
