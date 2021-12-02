@@ -6,12 +6,12 @@ import com.github.shynixn.mccoroutine.launch
 import com.github.shynixn.mccoroutine.launchAsync
 import com.github.shynixn.mccoroutine.minecraftDispatcher
 import kotlinx.coroutines.CoroutineScope
-import me.racci.raccicore.RacciPlugin
-import me.racci.raccicore.extensions.KotlinListener
-import me.racci.raccicore.lifecycle.LifecycleListener
+import me.racci.raccicore.api.extensions.KotlinListener
+import me.racci.raccicore.api.lifecycle.LifecycleListener
+import me.racci.raccicore.api.plugin.RacciPlugin
 
 class Plugin: RacciPlugin(
-    "&6ExamplePlugin"
+    "&6Example Plugin"
 ) {
 
     companion object {

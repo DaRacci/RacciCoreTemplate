@@ -1,6 +1,6 @@
 package org.example.plugin
 
-import me.racci.raccicore.lifecycle.LifecycleListener
+import me.racci.raccicore.api.lifecycle.LifecycleListener
 import org.example.plugin.Plugin.Companion.log
 
 class ExampleLifecycle(

@@ -3,8 +3,8 @@ package org.example.plugin
 import co.aikar.commands.BaseCommand
 import co.aikar.commands.annotation.CommandCompletion
 import co.aikar.commands.annotation.Default
-import me.racci.raccicore.extensions.miniMessage
-import me.racci.raccicore.extensions.msg
+import me.racci.raccicore.api.extensions.msg
+import net.kyori.adventure.text.minimessage.MiniMessage.miniMessage
 import org.bukkit.command.CommandSender
 import org.bukkit.entity.Player
 
@@ -20,8 +20,8 @@ class ExampleCommand: BaseCommand() {
         if(sender == target) return // these are the same player
         if(target.isDead) return // the target is dead
         target.teleport(sender)
-        target.msg(miniMessage("<aqua>You were teleport to <gray>${sender.displayName()}</gray>!"))
-        sender.msg(miniMessage("<aqua>You teleport <gray>${target.displayName()}</gray> to you!"))
+        target.msg(miniMessage().parse("<aqua>You were teleport to <gray>${sender.displayName()}</gray>!"))
+        sender.msg(miniMessage().parse("<aqua>You teleport <gray>${target.displayName()}</gray> to you!"))
     }
 
 }

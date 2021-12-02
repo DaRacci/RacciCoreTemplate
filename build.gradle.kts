@@ -7,8 +7,8 @@ plugins {
 
 dependencies {
 
-    compileOnly("com.github.DaRacci:RacciCore:0.3.0")
-    compileOnly("net.pl3x.purpur:purpur-api:1.17.1-R0.1-SNAPSHOT") // TODO Update to 1.18
+    compileOnly("com.sylphmc:raccicore:0.3.1")
+    compileOnly("org.purpurmc.purpur:purpur-api:1.18-R0.1-SNAPSHOT")
     compileOnly("org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.6.0") // This is needed so that it doesn't put itself in your final Jar
 
     testImplementation("org.junit.jupiter:junit-jupiter:5.8.1")
@@ -79,10 +79,14 @@ repositories {
     mavenCentral()
     mavenLocal()
     maven("https://jitpack.io")
+    // Citizens API
+    maven("https://repo.citizensnpcs.co")
     // Purpur
-    maven("https://repo.pl3x.net/")
-    // Kotlin
-    maven("https://dl.bintray.com/kotlin/kotlin-dev/")
+    maven("https://repo.purpurmc.org")
+    // ACF
+    maven("https://repo.aikar.co/content/groups/aikar/")
+    // Kyori
+    maven("https://oss.sonatype.org/content/repositories/snapshots/")
 }
 
 // These are in the gradle.properties file
